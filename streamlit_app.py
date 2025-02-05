@@ -1,5 +1,7 @@
 `#Import python packages
 import streamlit as st
+import requests
+
 from snowflake.snowpark.functions import col
 
 # Write directly to the app
@@ -44,5 +46,4 @@ if ingredients_list:
   my_insert_stmt = """ insert into smoothies.public.orders(ingredients)
             values ('""" + ingredients_string + """')"""
 
-import requests
 
