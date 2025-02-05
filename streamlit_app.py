@@ -49,6 +49,4 @@ if ingredients_list :
     
     time_to_insert = st.button('Submit order')
     if time_to_insert:
-                  
-
-    st.success('Your Smoothie is ordered!', icon="✅")
+                  st.success('Your Smoothie is ordered!', icon="✅")
